@@ -15,120 +15,128 @@
 </head>
 
 <body>
-    <!-- Main Page -->
-    <div
-        class="off-canvas-content"
-        data-off-canvas-content
-    >
-        <!-- main content within a `grid-container` -->
-        <div class="grid-container">
-            <!-- `grid-x` represents a row -->
+<!-- Main Page -->
+<div
+    class="off-canvas-content"
+    data-off-canvas-content
+>
+    <!-- main content within a `grid-container` -->
+    <div class="grid-container">
+        <!-- `grid-x` represents a row -->
 
-            <!-- >medium navigation links -->
-            <div class="grid-x grid-padding-x hide-for-small-only">
-                <div class="cell auto">
-                    <a href="#">Foundation</a>
-                </div>
-                <div class="cell auto">
-                    <a href="#">Dot</a>
-                </div>
-                <div class="cell auto">
-                    <a href="#">ZURB</a>
-                </div>
-                <div class="cell auto">
-                    <a href="#">Com</a>
-                </div>
-                <div class="cell auto">
-                    <a href="#">Slash</a>
-                </div>
-                <div class="cell auto">
-                    <a href="#">Sites</a>
-                </div>
+        <!-- >medium navigation links -->
+        <div class="grid-x grid-padding-x hide-for-small-only">
+            <div class="cell auto">
+                <a href="#">Foundation</a>
             </div>
-
-            <!-- 2 cell row -->
-            <div class="grid-x grid-padding-x">
-                <div
-                    class="cell small-6 large-4"
-                    style="background-color: #ADD8E6;"
-                >Small 6 / Large 4</div>
-                <div
-                    class="cell small-6 large-8"
-                    style="background-color: #90EE90;"
-                >Small 6 / Large 8</div>
+            <div class="cell auto">
+                <a href="#">Dot</a>
             </div>
-
-            <!-- cells of 1-5 -->
-            <div class="grid-x grid-padding-x">
-                <div
-                    class="cell large-auto"
-                    style="background-color: #ADD8E6;"
-                >One</div>
-                <div
-                    class="cell large-auto"
-                    style="background-color: #90EE90;"
-                >Two</div>
-                <div
-                    class="cell large-auto"
-                    style="background-color: #ADD8E6;"
-                >Three</div>
-                <div
-                    class="cell large-auto"
-                    style="background-color: #90EE90;"
-                >Four</div>
-                <div
-                    class="cell large-auto"
-                    style="background-color: #ADD8E6;"
-                >Five</div>
+            <div class="cell auto">
+                <a href="#">ZURB</a>
             </div>
-
-            <!-- open menu button -->
-            <div class="grid-x grid-padding-x show-for-small-only">
-                <button
-                    type="button"
-                    class="cell large-auto button"
-                    data-toggle="offCanvas"
-                >Open Menu</button>
+            <div class="cell auto">
+                <a href="#">Com</a>
+            </div>
+            <div class="cell auto">
+                <a href="#">Slash</a>
+            </div>
+            <div class="cell auto">
+                <a href="#">Sites</a>
             </div>
         </div>
-    </div>
 
-    <!-- Off-Canvas Content -->
-    <div class="off-canvas-wrapper">
-        <!-- Hamburger Menu -->
-        <div
-            class="off-canvas position-left"
-            id="offCanvas"
-            data-off-canvas
-        >
-            <!-- Close button -->
+        <!-- 2 cell row -->
+        <div class="grid-x grid-padding-x">
+            <div
+                class="cell small-6 large-4"
+                style="background-color: #ADD8E6;"
+            >Small 6 / Large 4
+            </div>
+            <div
+                class="cell small-6 large-8"
+                style="background-color: #90EE90;"
+            >Small 6 / Large 8
+            </div>
+        </div>
+
+        <!-- cells of 1-5 -->
+        <div class="grid-x grid-padding-x">
+            <div
+                class="cell large-auto"
+                style="background-color: #ADD8E6;"
+            >One
+            </div>
+            <div
+                class="cell large-auto"
+                style="background-color: #90EE90;"
+            >Two
+            </div>
+            <div
+                class="cell large-auto"
+                style="background-color: #ADD8E6;"
+            >Three
+            </div>
+            <div
+                class="cell large-auto"
+                style="background-color: #90EE90;"
+            >Four
+            </div>
+            <div
+                class="cell large-auto"
+                style="background-color: #ADD8E6;"
+            >Five
+            </div>
+        </div>
+
+        <!-- open menu button -->
+        <div class="grid-x grid-padding-x show-for-small-only">
             <button
-                class="close-button"
-                aria-label="Close menu"
                 type="button"
-                data-close
-            >
-                <span aria-hidden="true">&times;</span>
+                class="cell large-auto button"
+                data-toggle="offCanvas"
+            >Open Menu
             </button>
-
-            <!-- Menu -->
-            <ul class="vertical menu">
-                <li><a href="#">Foundation</a></li>
-                <li><a href="#">Dot</a></li>
-                <li><a href="#">ZURB</a></li>
-                <li><a href="#">Com</a></li>
-                <li><a href="#">Slash</a></li>
-                <li><a href="#">Sites</a></li>
-            </ul>
         </div>
     </div>
+</div>
 
-    <!-- include before closing <body> tag -->
-    <script src="js/vendor.js"></script>
-    <script src="js/foundation.js"></script>
-    <script type="application/javascript">
-        $(document).foundation();
-    </script>
+<!-- Off-Canvas Content -->
+<div class="off-canvas-wrapper">
+    <!-- Hamburger Menu -->
+    <div
+        class="off-canvas position-left"
+        id="offCanvas"
+        data-off-canvas
+    >
+        <!-- Close button -->
+        <button
+            class="close-button"
+            aria-label="Close menu"
+            type="button"
+            data-close
+        >
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+        <!-- Menu -->
+        <ul class="vertical menu">
+            <li><a href="#">Foundation</a></li>
+            <li><a href="#">Dot</a></li>
+            <li><a href="#">ZURB</a></li>
+            <li><a href="#">Com</a></li>
+            <li><a href="#">Slash</a></li>
+            <li><a href="#">Sites</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- include before closing <body> tag -->
+<script src="js/vendor.js"></script>
+<script src="js/foundation.js"></script>
+<script type="application/javascript">
+    $(document).foundation();
+</script>
 </body>
 
 </html>
