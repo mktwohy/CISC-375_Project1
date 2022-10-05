@@ -17,67 +17,62 @@
         type="text/css"
         href="css/style.css"
     >
-    <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    >
 </head>
 
-<body>
+<body class="noBorder">
 <div
-    class="off-canvas-content"
+    class="canvas-content"
     data-off-canvas-content
 >
-    <!-- #region main content -->
     <div class="grid-container">
+        <div class="top-bar grid-x grid-padding-x align-left">
+            <div class="cell medium-1 show-for-medium">
 
-        <!-- #region Medium Navigation Links -->
-        <div class="grid-x grid-padding-x hide-for-small-only">
-            <div class="cell auto">
-                <a href="index.html">Home Page</a>
             </div>
-            <div class="cell auto">
-                <a href="projects.html">Projects</a>
+
+            <div class="cell small-1 show-for-small-only">
+                <input
+                    id="nav_menu_toggle"
+                    type="image"
+                    src="images/hamburger_icon.png"
+                    alt="text"
+                    data-toggle="offCanvas"
+                >
             </div>
-            <div class="cell auto">
-                <a href="resume.html">Resume</a>
+
+            <div class="cell small-11 medium-5">
+                <p id="nav-bar-name">
+                    Michael Twohy
+                </p>
             </div>
-            <div class="cell auto">
-                <a href="fun.html">Fun Stuff</a>
+
+            <div class="cell small-6">
+                <div class="grid-x">
+                    <!-- medium, large top bar-->
+                    <div class="cell auto show-for-medium">
+                        <a href="index.html">Home Page</a>
+                    </div>
+                    <div class="cell auto show-for-medium">
+                        <a href="projects.html">Projects</a>
+                    </div>
+                    <div class="cell auto show-for-medium">
+                        <a href="resume.html">Resume</a>
+                    </div>
+                    <div class="cell auto show-for-medium">
+                        <a href="fun.html">Fun Stuff</a>
+                    </div>
+                </div>
             </div>
+
+
+
+
         </div>
-        <!-- #endregion -->
-
-        <!-- #region Hamburger Menu Button -->
-        <nav class="tab-bar hide-for-medium-up">
-            <label
-                class="menu__btn"
-                for="menu__toggle"
-            >
-                <span></span>
-            </label>
-            <button
-                id="menu__toggle"
-                type="button"
-                class="menu_icon"
-                data-toggle="offCanvas"
-            >
-                <section class="left-small">
-                    <a class="left-off-canvas-toggle menu-icon">
-                            <span>
-
-                            </span>
-                    </a>
-                </section>
-            </button>
-        </nav>
         <!-- #endregion -->
 
 
         <div class="menu-centered page-content">
-            <h1>
-                Michael Twohy
-            </h1>
+
             <img
                 tag="profilePicture"
                 src="images/placeholder_profile.png"
@@ -85,14 +80,16 @@
             >
 
             <p>
-                Hello World! This is a bit about me (e.g. what I am majoring in, what my goals are after college,
+                I am a senior at the University of St. Thomas, and I'm studying Computer Science.
+                I will be graduating this year
+                Hello World! This is a bit about me
+                (e.g. what I am majoring in, what my goals are after college,
                 etc.)
             </p>
         </div>
 
 
     </div>
-    <!-- #endregion -->
 </div>
 
 <!-- #region Hamburger Menu Content -->
