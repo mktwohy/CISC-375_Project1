@@ -17,80 +17,65 @@
         type="text/css"
         href="css/style.css"
     >
-    <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    >
 </head>
 
-<body>
-<div
-    class="off-canvas-content"
-    data-off-canvas-content
->
-    <!-- #region main content -->
+<body class="noBorder">
+<div class="canvas-content">
     <div class="grid-container">
+        <!-- Top Bar -->
+        <div class="top-bar grid-x grid-padding-x">
+            <div class="cell small-1">
+                <input
+                    class="show-for-small-only"
+                    id="nav_menu_toggle"
+                    type="image"
+                    src="images/hamburger_icon.png"
+                    alt="text"
+                    data-toggle="offCanvas"
+                >
+            </div>
 
-        <!-- #region Medium Navigation Links -->
-        <div class="grid-x grid-padding-x hide-for-small-only">
-            <div class="cell auto">
-                <a href="index.html">Home Page</a>
+            <div
+                id="nav-bar-name"
+                class="cell small-11 medium-3 align-center-middle"
+            >
+                Michael Twohy
             </div>
-            <div class="cell auto">
-                <a href="projects.html">Projects</a>
-            </div>
-            <div class="cell auto">
-                <a href="resume.html">Resume</a>
-            </div>
-            <div class="cell auto">
-                <a href="fun.html">Fun Stuff</a>
+
+            <div class="cell small-8">
+                <div class="grid-x show-for-medium align-center">
+                    <div class="cell small-3">
+                        <a href="index.html">Home Page</a>
+                    </div>
+                    <div class="cell small-3">
+                        <a href="projects.html">Projects</a>
+                    </div>
+                    <div class="cell small-3">
+                        <a href="resume.html">Resume</a>
+                    </div>
+                    <div class="cell small-3">
+                        <a href="fun.html">Fun Stuff</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- #endregion -->
 
-        <!-- #region Hamburger Menu Button -->
-        <nav class="tab-bar hide-for-medium-up">
-            <label
-                class="menu__btn"
-                for="menu__toggle"
-            >
-                <span></span>
-            </label>
-            <button
-                id="menu__toggle"
-                type="button"
-                class="menu_icon"
-                data-toggle="offCanvas"
-            >
-                <section class="left-small">
-                    <a class="left-off-canvas-toggle menu-icon">
-                            <span>
-
-                            </span>
-                    </a>
-                </section>
-            </button>
-        </nav>
-        <!-- #endregion -->
-
-
-        <div class="menu-centered page-content">
-            <h1>Fun Stuff</h1>
-
-            <h2>Hobbies</h2>
-            <h3>Music</h3>
-            <h3>Programming</h3>
-            <h3>Video Games</h3>
-
-            <h2>Pets</h2>
+        <!-- Page Content -->
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-4">
+                <h2>Fun Stuff</h2>
+            </div>
         </div>
 
-
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-4 medium-margin">
+                <!-- CONTENT HERE -->
+            </div>
+        </div>
     </div>
-    <!-- #endregion -->
 </div>
 
-<!-- #region Hamburger Menu Content -->
+<!-- region Hamburger Menu Content -->
 <div class="off-canvas-wrapper">
     <div
         class="off-canvas position-left"
@@ -116,16 +101,14 @@
         </ul>
     </div>
 </div>
-<!-- #endregion -->
+<!-- endregion -->
 
 
-<!-- #region Foundation Boilerplate -->
+<!-- region Foundation Boilerplate -->
 <script src="js/vendor.js"></script>
 <script src="js/foundation.js"></script>
 <script type="application/javascript">
     $(document).foundation();
 </script>
-<!-- #endregion -->
+<!-- endregion -->
 </body>
-
-</html>
