@@ -20,18 +20,13 @@
 </head>
 
 <body class="noBorder">
-<div
-    class="canvas-content"
-    data-off-canvas-content
->
+<div class="canvas-content">
     <div class="grid-container">
-        <div class="top-bar grid-x grid-padding-x align-left">
-            <div class="cell medium-1 show-for-medium">
-
-            </div>
-
-            <div class="cell small-1 show-for-small-only">
+        <!-- Top Bar -->
+        <div class="top-bar grid-x grid-padding-x">
+            <div class="cell small-1">
                 <input
+                    class="show-for-small-only"
                     id="nav_menu_toggle"
                     type="image"
                     src="images/hamburger_icon.png"
@@ -40,55 +35,58 @@
                 >
             </div>
 
-            <div class="cell small-11 medium-5">
-                <p id="nav-bar-name">
-                    Michael Twohy
-                </p>
+            <div
+                id="nav-bar-name"
+                class="cell small-11 medium-3 align-center-middle"
+            >
+                Michael Twohy
             </div>
 
-            <div class="cell small-6">
-                <div class="grid-x">
-                    <!-- medium, large top bar-->
-                    <div class="cell auto show-for-medium">
+            <div class="cell small-8">
+                <div class="grid-x show-for-medium align-center">
+                    <div class="cell small-3">
                         <a href="index.html">Home Page</a>
                     </div>
-                    <div class="cell auto show-for-medium">
+                    <div class="cell small-3">
                         <a href="projects.html">Projects</a>
                     </div>
-                    <div class="cell auto show-for-medium">
+                    <div class="cell small-3">
                         <a href="resume.html">Resume</a>
                     </div>
-                    <div class="cell auto show-for-medium">
+                    <div class="cell small-3">
                         <a href="fun.html">Fun Stuff</a>
                     </div>
                 </div>
             </div>
-
-
-
-
-        </div>
-        <!-- #endregion -->
-
-
-        <div class="menu-centered page-content">
-
-            <img
-                tag="profilePicture"
-                src="images/placeholder_profile.png"
-                alt="Profile Picture"
-            >
-
-            <p>
-                I am a senior at the University of St. Thomas, and I'm studying Computer Science.
-                I will be graduating this year
-                Hello World! This is a bit about me
-                (e.g. what I am majoring in, what my goals are after college,
-                etc.)
-            </p>
         </div>
 
+        <!-- Page Content -->
+        <div
+            class="grid-x grid-padding-x"
+        >
+            <div class="cell small-4 medium-margin">
+                <img
+                    id="profilePicture"
+                    src="images/placeholder_profile.png"
+                    alt="Profile Picture"
+                >
+            </div>
+        </div>
 
+        <div class="cell small-6">
+            <div class="callout secondary shadow-low">
+                <h5>About Me</h5>
+                <p>
+                    I am a senior at the University of St. Thomas, and I'm studying Computer Science.
+                    I will be graduating this year
+                    <br/>
+                    Hello World! This is a bit about me
+                    (e.g. what I am majoring in, what my goals are after college,
+                    etc.)
+                </p>
+            </div>
+
+        </div>
     </div>
 </div>
 
