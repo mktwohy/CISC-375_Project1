@@ -21,6 +21,15 @@
             37.2px 80px 99.9px -2.4px hsl(var(--shadow-color) / 0.1);
 }
 
+.resume-details {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.resume-header {
+    color: #0c3d5d;
+}
+
 div {
     justify-content: center;
 }
@@ -40,6 +49,10 @@ div {
 .top-bar {
     box-shadow: var(--shadow-elevation-medium);
     margin-bottom: 50px;
+}
+
+.fun-stuff-block {
+    margin: 10px;
 }
 
 #nav-bar-name{
@@ -67,7 +80,7 @@ input {
 
 img {
     width: auto;
-    height: 100%;
+    height: auto;
     align-self: center;
 }
 
