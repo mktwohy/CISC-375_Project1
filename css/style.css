@@ -21,6 +21,10 @@
             37.2px 80px 99.9px -2.4px hsl(var(--shadow-color) / 0.1);
 }
 
+.spacer {
+    height: 50px;
+}
+
 .resume-details {
     margin-left: 15px;
     margin-right: 15px;
